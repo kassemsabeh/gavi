@@ -19,6 +19,9 @@ $ bash ./train.sh
 ```
 The model uses the pre-trained ```t5-base``` model from the in the 🤗 Transformers by default to train the model. The trained model will be stored in ```./saved_models/```.
 
+## Download Pre-trained Model
+We provide a pre-trained model on the `az_base_dataset.jsonl` dataset [here](https://www.dropbox.com/sh/v7fnczj2ykfxuwl/AAC9gRSZrH5TbIRDU2x7CZnTa?dl=0). Download the folder and place it in the ```saved_models``` folder of the repo.
+
 After running all scripts, you should obtain the following directory tree:
 ```bash
 ├── README.md

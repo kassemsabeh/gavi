@@ -19,6 +19,13 @@ _OUTPUT_MODEL_NAME = flags.DEFINE_string(
     required=True
 )
 
+_INPUT_DATA_DIR  = flags.DEFINE_string(
+    'data_directory',
+    default=None,
+    help='The input directory for the datasets',
+    required=True
+)
+
 _INPUT_FILE_PATH = flags.DEFINE_string(
     'file_path',
     default=None,
@@ -124,6 +131,9 @@ def save_model(model):
 def main():
     if not os.path.exists(_OUTPUT_MODEL_NAME.value):
         os.mkdir(_OUTPUT_MODEL_NAME.value)
+    
+    if not os.path.exists(_INPUT_DATA_DIR.value):
+        os.mkdir(_INPUT_DATA_DIR.value)
     
     # Build, train and analyze the model with the pipeline
     model = train(config['n_epochs'], tokenizer, model, train_dataloader, validation_dataloader, optimizer)
