@@ -1,0 +1,4 @@
+*.csv
+*.ipynb
+*.jsonl
+.DS_Store
