@@ -39,3 +39,25 @@ After running all scripts, you should obtain the following directory tree:
 ├── train.sh
 ├── test.py
 ```
+
+------
+
+If you found this work useful, please cite it as follows:
+
+```
+@inproceedings{sabeh-etal-2023-gavi,
+    title = "{GAVI}: A Category-Aware Generative Approach for Brand Value Identification",
+    author = "Sabeh, Kassem  and
+      Kacimi, Mouna  and
+      Gamper, Johann",
+    editor = "Abbas, Mourad  and
+      Freihat, Abed Alhakim",
+    booktitle = "Proceedings of the 6th International Conference on Natural Language and Speech Processing (ICNLSP 2023)",
+    month = dec,
+    year = "2023",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.icnlsp-1.11",
+    pages = "110--119",
+}
+```
